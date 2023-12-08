@@ -1,5 +1,5 @@
 import { writeFile, readFile } from 'node:fs/promises';
-import path from 'node:path';
+const path = require('path');
 import { generateDocumentation } from './core/index';
 
 export async function createDocument(pathOfFileIn, pathOfFileOut) {

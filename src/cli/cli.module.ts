@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { CliCommand } from './cli.command';
+import { CliService } from './cli.service';
 
 @Module({
-  providers: [CliCommand],
+  providers: [CliService],
 })
-export class CliModule {}
+export class CliModule { }
